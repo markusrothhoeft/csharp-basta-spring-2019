@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: CalculatorLibrary.Calculator
+  commentId: T:CalculatorLibrary.Calculator
+  id: Calculator
+  parent: CalculatorLibrary
+  children:
+  - CalculatorLibrary.Calculator.Div(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Calculator
+  nameWithType: Calculator
+  fullName: CalculatorLibrary.Calculator
+  type: Class
+  source:
+    remote:
+      path: src/CalculatorLibrary/Calculator.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: Calculator
+    path: ../../src/CalculatorLibrary/Calculator.cs
+    startLine: 4
+  assemblies:
+  - CalculatorLibrary
+  namespace: CalculatorLibrary
+  syntax:
+    content: public class Calculator
+    content.vb: Public Class Calculator
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CalculatorLibrary.Calculator.Div(System.Int32,System.Int32)
+  commentId: M:CalculatorLibrary.Calculator.Div(System.Int32,System.Int32)
+  id: Div(System.Int32,System.Int32)
+  parent: CalculatorLibrary.Calculator
+  langs:
+  - csharp
+  - vb
+  name: Div(Int32, Int32)
+  nameWithType: Calculator.Div(Int32, Int32)
+  fullName: CalculatorLibrary.Calculator.Div(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/CalculatorLibrary/Calculator.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: Div
+    path: ../../src/CalculatorLibrary/Calculator.cs
+    startLine: 17
+  assemblies:
+  - CalculatorLibrary
+  namespace: CalculatorLibrary
+  summary: "\nMakes a division.\n"
+  remarks: lorem ipsum
+  example:
+  - "\n<pre><code source=\"../CalculatorTest/CalculatorTest.cs\" region=\"FirstTest\">        [Fact]\n    public void SimpleDivision()\n    {\n        Assert.Equal(2, Calculator.Div(10, 5));\n    }</code></pre>\n"
+  syntax:
+    content: public static int Div(int dividend, int divisor)
+    parameters:
+    - id: dividend
+      type: System.Int32
+      description: First parameter for the calculation
+    - id: divisor
+      type: System.Int32
+      description: Second parameter for the calculation
+    return:
+      type: System.Int32
+      description: The resulting quotient
+    content.vb: Public Shared Function Div(dividend As Integer, divisor As Integer) As Integer
+  overload: CalculatorLibrary.Calculator.Div*
+  exceptions:
+  - type: System.DivideByZeroException
+    commentId: T:System.DivideByZeroException
+    description: Thrown if divisor is zero
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: CalculatorLibrary
+  commentId: N:CalculatorLibrary
+  name: CalculatorLibrary
+  nameWithType: CalculatorLibrary
+  fullName: CalculatorLibrary
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.DivideByZeroException
+  commentId: T:System.DivideByZeroException
+  isExternal: true
+- uid: CalculatorLibrary.Calculator.Div*
+  commentId: Overload:CalculatorLibrary.Calculator.Div
+  name: Div
+  nameWithType: Calculator.Div
+  fullName: CalculatorLibrary.Calculator.Div
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

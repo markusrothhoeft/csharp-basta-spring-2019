@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: CalculatorWebApi.Controllers.CalculatorController
+  commentId: T:CalculatorWebApi.Controllers.CalculatorController
+  id: CalculatorController
+  parent: CalculatorWebApi.Controllers
+  children:
+  - CalculatorWebApi.Controllers.CalculatorController.Post(CalculatorWebApi.Model.CalculationParams)
+  langs:
+  - csharp
+  - vb
+  name: CalculatorController
+  nameWithType: CalculatorController
+  fullName: CalculatorWebApi.Controllers.CalculatorController
+  type: Class
+  source:
+    remote:
+      path: src/Calculator/Controllers/CalculatorController.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: CalculatorController
+    path: ../../src/Calculator/Controllers/CalculatorController.cs
+    startLine: 10
+  assemblies:
+  - CalculatorWebApi
+  namespace: CalculatorWebApi.Controllers
+  syntax:
+    content: >-
+      [Route("api/[controller]")]
+
+      [ApiController]
+
+      public class CalculatorController : ControllerBase
+    content.vb: >-
+      <Route("api/[controller]")>
+
+      <ApiController>
+
+      Public Class CalculatorController
+          Inherits ControllerBase
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Mvc.ControllerBase
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/[controller]
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CalculatorWebApi.Controllers.CalculatorController.Post(CalculatorWebApi.Model.CalculationParams)
+  commentId: M:CalculatorWebApi.Controllers.CalculatorController.Post(CalculatorWebApi.Model.CalculationParams)
+  id: Post(CalculatorWebApi.Model.CalculationParams)
+  parent: CalculatorWebApi.Controllers.CalculatorController
+  langs:
+  - csharp
+  - vb
+  name: Post(CalculationParams)
+  nameWithType: CalculatorController.Post(CalculationParams)
+  fullName: CalculatorWebApi.Controllers.CalculatorController.Post(CalculatorWebApi.Model.CalculationParams)
+  type: Method
+  source:
+    remote:
+      path: src/Calculator/Controllers/CalculatorController.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: Post
+    path: ../../src/Calculator/Controllers/CalculatorController.cs
+    startLine: 22
+  assemblies:
+  - CalculatorWebApi
+  namespace: CalculatorWebApi.Controllers
+  summary: "\nMakes a Division\n"
+  remarks: Lorem ipsum
+  example: []
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [ProducesResponseType(500)]
+
+      [ProducesResponseType(200)]
+
+      public ActionResult<int> Post([FromBody] CalculationParams calculationParams)
+    parameters:
+    - id: calculationParams
+      type: CalculatorWebApi.Model.CalculationParams
+      description: Two Numbers for a simple division
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{System.Int32}
+      description: int
+    content.vb: >-
+      <HttpPost>
+
+      <ProducesResponseType(500)>
+
+      <ProducesResponseType(200)>
+
+      Public Function Post(calculationParams As CalculationParams) As ActionResult(Of Integer)
+  overload: CalculatorWebApi.Controllers.CalculatorController.Post*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 500
+  - type: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 200
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CalculatorWebApi.Controllers
+  commentId: N:CalculatorWebApi.Controllers
+  name: CalculatorWebApi.Controllers
+  nameWithType: CalculatorWebApi.Controllers
+  fullName: CalculatorWebApi.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Mvc.ControllerBase
+  commentId: T:Microsoft.AspNetCore.Mvc.ControllerBase
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ControllerBase
+  nameWithType: ControllerBase
+  fullName: Microsoft.AspNetCore.Mvc.ControllerBase
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: CalculatorWebApi.Controllers.CalculatorController.Post*
+  commentId: Overload:CalculatorWebApi.Controllers.CalculatorController.Post
+  name: Post
+  nameWithType: CalculatorController.Post
+  fullName: CalculatorWebApi.Controllers.CalculatorController.Post
+- uid: CalculatorWebApi.Model.CalculationParams
+  commentId: T:CalculatorWebApi.Model.CalculationParams
+  parent: CalculatorWebApi.Model
+  name: CalculationParams
+  nameWithType: CalculationParams
+  fullName: CalculatorWebApi.Model.CalculationParams
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{System.Int32}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{System.Int32}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<Int32>
+  nameWithType: ActionResult<Int32>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<System.Int32>
+  nameWithType.vb: ActionResult(Of Int32)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of System.Int32)
+  name.vb: ActionResult(Of Int32)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CalculatorWebApi.Model
+  commentId: N:CalculatorWebApi.Model
+  name: CalculatorWebApi.Model
+  nameWithType: CalculatorWebApi.Model
+  fullName: CalculatorWebApi.Model
+- uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult`1
+  isExternal: true
+  name: ActionResult<TValue>
+  nameWithType: ActionResult<TValue>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<TValue>
+  nameWithType.vb: ActionResult(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of TValue)
+  name.vb: ActionResult(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )

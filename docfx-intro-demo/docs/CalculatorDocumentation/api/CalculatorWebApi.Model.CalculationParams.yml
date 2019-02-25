@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: CalculatorWebApi.Model.CalculationParams
+  commentId: T:CalculatorWebApi.Model.CalculationParams
+  id: CalculationParams
+  parent: CalculatorWebApi.Model
+  children:
+  - CalculatorWebApi.Model.CalculationParams.Dividend
+  - CalculatorWebApi.Model.CalculationParams.Divisor
+  langs:
+  - csharp
+  - vb
+  name: CalculationParams
+  nameWithType: CalculationParams
+  fullName: CalculatorWebApi.Model.CalculationParams
+  type: Class
+  source:
+    remote:
+      path: src/Calculator/Model/CalculationParams.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: CalculationParams
+    path: ../../src/Calculator/Model/CalculationParams.cs
+    startLine: 12
+  assemblies:
+  - CalculatorWebApi
+  namespace: CalculatorWebApi.Model
+  summary: "\nClass for Calculation Parameters\n"
+  example: []
+  syntax:
+    content: public class CalculationParams
+    content.vb: Public Class CalculationParams
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CalculatorWebApi.Model.CalculationParams.Dividend
+  commentId: P:CalculatorWebApi.Model.CalculationParams.Dividend
+  id: Dividend
+  parent: CalculatorWebApi.Model.CalculationParams
+  langs:
+  - csharp
+  - vb
+  name: Dividend
+  nameWithType: CalculationParams.Dividend
+  fullName: CalculatorWebApi.Model.CalculationParams.Dividend
+  type: Property
+  source:
+    remote:
+      path: src/Calculator/Model/CalculationParams.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: Dividend
+    path: ../../src/Calculator/Model/CalculationParams.cs
+    startLine: 18
+  assemblies:
+  - CalculatorWebApi
+  namespace: CalculatorWebApi.Model
+  summary: "\nThe first number of a division\n"
+  example: []
+  syntax:
+    content: public int Dividend { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number&apos;s value
+    content.vb: Public Property Dividend As Integer
+  overload: CalculatorWebApi.Model.CalculationParams.Dividend*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CalculatorWebApi.Model.CalculationParams.Divisor
+  commentId: P:CalculatorWebApi.Model.CalculationParams.Divisor
+  id: Divisor
+  parent: CalculatorWebApi.Model.CalculationParams
+  langs:
+  - csharp
+  - vb
+  name: Divisor
+  nameWithType: CalculationParams.Divisor
+  fullName: CalculatorWebApi.Model.CalculationParams.Divisor
+  type: Property
+  source:
+    remote:
+      path: src/Calculator/Model/CalculationParams.cs
+      branch: master
+      repo: https://github.com/rstropek/docfx-intro-demo.git
+    id: Divisor
+    path: ../../src/Calculator/Model/CalculationParams.cs
+    startLine: 25
+  assemblies:
+  - CalculatorWebApi
+  namespace: CalculatorWebApi.Model
+  summary: "\nThe second number of a division\n"
+  example: []
+  syntax:
+    content: public int Divisor { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number&apos;s value
+    content.vb: Public Property Divisor As Integer
+  overload: CalculatorWebApi.Model.CalculationParams.Divisor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CalculatorWebApi.Model
+  commentId: N:CalculatorWebApi.Model
+  name: CalculatorWebApi.Model
+  nameWithType: CalculatorWebApi.Model
+  fullName: CalculatorWebApi.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CalculatorWebApi.Model.CalculationParams.Dividend*
+  commentId: Overload:CalculatorWebApi.Model.CalculationParams.Dividend
+  name: Dividend
+  nameWithType: CalculationParams.Dividend
+  fullName: CalculatorWebApi.Model.CalculationParams.Dividend
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CalculatorWebApi.Model.CalculationParams.Divisor*
+  commentId: Overload:CalculatorWebApi.Model.CalculationParams.Divisor
+  name: Divisor
+  nameWithType: CalculationParams.Divisor
+  fullName: CalculatorWebApi.Model.CalculationParams.Divisor

@@ -1,0 +1,67 @@
+# ASP.NET Core
+# Build and test ASP.NET Core web applications targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/vsts/pipelines/languages/dotnet-core
+
+variables:
+  buildConfiguration: 'Release'
+
+jobs:
+  - job: BuildandTestCode
+    pool:
+      vmImage: 'ubuntu-16.04'
+    steps:
+    - script: dotnet restore
+      displayName: 'Restore NuGet Packages'
+
+    - script: dotnet build --configuration $(buildConfiguration)
+      workingDirectory: ./src/CalculatorLibrary
+      displayName: 'Build Calculator Library'
+
+    - script: |
+        dotnet build --configuration $(buildConfiguration)
+        dotnet publish --configuration $(buildConfiguration) --output out
+      workingDirectory: ./src/Calculator
+      displayName: 'Build Calculator Web API'
+
+    - script: |
+        dotnet build --configuration $(buildConfiguration)
+        dotnet test --results-directory TestResults --logger:trx
+      workingDirectory: ./src/CalculatorTest
+      displayName: 'Build and run tests'
+
+    - task: PublishTestResults@2
+      condition: always()
+      displayName: 'Publish Test Results'
+      inputs:
+        testRunner: VSTest
+        testResultsFiles: '**/*.trx'
+        buildConfiguration: $(buildConfiguration)
+
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: './src/Calculator/out'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/Calculator-$(Build.BuildId).zip' 
+
+    - task: PublishBuildArtifacts@1
+
+  - job: BuildDocumentation
+    dependsOn: BuildandTestCode
+    condition: succeeded('BuildandTestCode')
+    pool:
+      vmImage: 'vs2017-win2016'
+    steps:
+    - script: dotnet build --configuration $(buildConfiguration)
+      workingDirectory: ./docs/CalculatorDocumentation
+      displayName: 'Build Calculator Documentation'
+
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: './docs/CalculatorDocumentation/_site'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/CalculatorDocs-$(Build.BuildId).zip' 
+
+    - task: PublishBuildArtifacts@1

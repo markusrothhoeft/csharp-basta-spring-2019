@@ -1,0 +1,16 @@
+### YamlMime:TableOfContent
+- uid: CalculatorLibrary
+  name: CalculatorLibrary
+  items:
+  - uid: CalculatorLibrary.Calculator
+    name: Calculator
+- uid: CalculatorWebApi.Controllers
+  name: CalculatorWebApi.Controllers
+  items:
+  - uid: CalculatorWebApi.Controllers.CalculatorController
+    name: CalculatorController
+- uid: CalculatorWebApi.Model
+  name: CalculatorWebApi.Model
+  items:
+  - uid: CalculatorWebApi.Model.CalculationParams
+    name: CalculationParams

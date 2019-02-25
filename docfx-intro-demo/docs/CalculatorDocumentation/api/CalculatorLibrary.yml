@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: CalculatorLibrary
+  commentId: N:CalculatorLibrary
+  id: CalculatorLibrary
+  children:
+  - CalculatorLibrary.Calculator
+  langs:
+  - csharp
+  - vb
+  name: CalculatorLibrary
+  nameWithType: CalculatorLibrary
+  fullName: CalculatorLibrary
+  type: Namespace
+  assemblies:
+  - CalculatorLibrary
+references:
+- uid: CalculatorLibrary.Calculator
+  commentId: T:CalculatorLibrary.Calculator
+  name: Calculator
+  nameWithType: Calculator
+  fullName: CalculatorLibrary.Calculator

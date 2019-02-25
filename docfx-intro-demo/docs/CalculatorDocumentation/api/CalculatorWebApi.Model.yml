@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: CalculatorWebApi.Model
+  commentId: N:CalculatorWebApi.Model
+  id: CalculatorWebApi.Model
+  children:
+  - CalculatorWebApi.Model.CalculationParams
+  langs:
+  - csharp
+  - vb
+  name: CalculatorWebApi.Model
+  nameWithType: CalculatorWebApi.Model
+  fullName: CalculatorWebApi.Model
+  type: Namespace
+  assemblies:
+  - CalculatorWebApi
+references:
+- uid: CalculatorWebApi.Model.CalculationParams
+  commentId: T:CalculatorWebApi.Model.CalculationParams
+  parent: CalculatorWebApi.Model
+  name: CalculationParams
+  nameWithType: CalculationParams
+  fullName: CalculatorWebApi.Model.CalculationParams
+- uid: CalculatorWebApi.Model
+  commentId: N:CalculatorWebApi.Model
+  name: CalculatorWebApi.Model
+  nameWithType: CalculatorWebApi.Model
+  fullName: CalculatorWebApi.Model

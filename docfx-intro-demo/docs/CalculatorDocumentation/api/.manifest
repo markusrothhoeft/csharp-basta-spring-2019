@@ -1,0 +1,12 @@
+{
+  "CalculatorLibrary": "CalculatorLibrary.yml",
+  "CalculatorLibrary.Calculator": "CalculatorLibrary.Calculator.yml",
+  "CalculatorLibrary.Calculator.Div(System.Int32,System.Int32)": "CalculatorLibrary.Calculator.yml",
+  "CalculatorWebApi.Controllers": "CalculatorWebApi.Controllers.yml",
+  "CalculatorWebApi.Controllers.CalculatorController": "CalculatorWebApi.Controllers.CalculatorController.yml",
+  "CalculatorWebApi.Controllers.CalculatorController.Post(CalculatorWebApi.Model.CalculationParams)": "CalculatorWebApi.Controllers.CalculatorController.yml",
+  "CalculatorWebApi.Model": "CalculatorWebApi.Model.yml",
+  "CalculatorWebApi.Model.CalculationParams": "CalculatorWebApi.Model.CalculationParams.yml",
+  "CalculatorWebApi.Model.CalculationParams.Dividend": "CalculatorWebApi.Model.CalculationParams.yml",
+  "CalculatorWebApi.Model.CalculationParams.Divisor": "CalculatorWebApi.Model.CalculationParams.yml"
+}
